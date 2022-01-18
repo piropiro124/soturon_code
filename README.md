@@ -28,3 +28,11 @@ ImageHashのaHashを利用してフォルダ内から重複した画像を検出
 
 ## same_search_phash.py
 ImageHashのpHashを利用してフォルダ内から重複した画像を検出する
+
+ImageHashの参考サイト
+
+https://tech.unifa-e.com/entry/2017/11/27/111546
+
+https://water2litter.net/rum/post/python_imagehash_diff/
+
+https://qiita.com/meznat/items/80c5ad8a893125db1941
