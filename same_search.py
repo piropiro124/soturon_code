@@ -3,8 +3,8 @@ from PIL import Image
 import imagehash
 
 
-# 検索するパス
-userpath = 'Face/four_category/all_neko'  
+# 重複を探したいフォルダのパス
+userpath = 'imgs/***'  
 
 def p_hash(img,otherimg):
     hash = imagehash.phash(Image.open(img))
