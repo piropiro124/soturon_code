@@ -43,6 +43,27 @@ def build_model(num_categories):
                   metrics=["acc"])
     return model
 
+"""
+# VGG16での転移学習モデル
+def build_model(num_categories):
+     input_tensor = Input(shape=(*, *, *))
+     vgg16 = VGG16(include_top=False, weights='imagenet', input_tensor=input_tensor)
+     top_model = Sequential()
+     top_model.add(Flatten(input_shape=vgg16.output_shape[1:]))
+     top_model.add(Dense(256, activation='relu', kernel_initializer='he_normal'))
+     top_model.add(Dropout(0.5))
+     top_model.add(Dense(num_categories, activation='sigmoid'))
+     model = Model(inputs=vgg16.input, outputs=top_model(vgg16.output))
+ 
+        # 最後の層の直前までの重みを固定
+     for layer in model.layers[:15]:
+           layer.trainable = False
+
+     model.compile(loss=categorical_crossentropy,
+                  optimizer=SGD(learning_rate=1e-4, momentum=0.9),
+                  metrics=["acc"])
+     return model
+"""
 
 def init_train_records(rec):
     # 学習経過記録用の配列を作成する
