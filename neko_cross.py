@@ -25,7 +25,7 @@ def read_data(data_file):
 
 def build_model(num_categories):
     model = Sequential()
-    model.add(Conv2D(32, (3, 3), activation="relu", input_shape=INPUT_SHAPE))
+    model.add(Conv2D(32, (3, 3), activation="relu", input_shape=INPUT_SHAPE)) # 正則化のコード：kernel_regularizer=keras.regularizers.l2(0.001)
     model.add(MaxPooling2D((2, 2)))
     model.add(Conv2D(64, (3, 3), activation="relu"))
     model.add(MaxPooling2D((2, 2)))
