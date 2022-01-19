@@ -9,6 +9,10 @@ Dockerと繋げて使用した
 ## cut_face.py
 画像から猫の顔を検出して切り抜き、保存する
 
+参考サイト
+
+https://qiita.com/yottyann1221/items/a08300b572206075ee9f
+
 ## make_data.py
 データセットの前処理フェーズ
 
@@ -21,6 +25,14 @@ Dockerと繋げて使用した
 
 正則化、転移学習モデルも記載
 
+
+正則化参考サイト
+
+https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja
+
+転移学習参考サイト
+
+https://www.tdi.co.jp/miso/study-deep-learning-3
 
 ## plot_results.py
 学習結果グラフ表示フェーズ
