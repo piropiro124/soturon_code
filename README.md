@@ -1,8 +1,9 @@
 # soturon_code
-卒論で使用したファイルたちをまとめる
+卒論で使用したスクリプトファイルをまとめる
 
 ## img_collector.py
-selemiumとBeautifulSoup等を使用してスクレイピングを行なう
+selemium、BeautifulSoup等を使用してスクレイピングを行なう
+
 Dockerと繋げて使用した
 
 ## cut_face.py
@@ -10,17 +11,20 @@ Dockerと繋げて使用した
 
 ## make_data.py
 データセットの前処理フェーズ
+
 学習に使用する画像を訓練データ、テストデータに分けてNumpy配列で保存する
 
 ## neko_cross.py
 学習フェーズ
+
 交差検証を行なう仕様
 
-転移学習モデルも記載
+正則化、転移学習モデルも記載
 
 
 ## plot_results.py
 学習結果グラフ表示フェーズ
+
 訓練データとテストデータそれぞれの正解率と損失の推移がグラフで表示される
 
 ## same_search_ahash.py
@@ -28,6 +32,7 @@ ImageHashのaHashを利用してフォルダ内から重複した画像を検出
 
 ## same_search_phash.py
 ImageHashのpHashを利用してフォルダ内から重複した画像を検出する
+
 
 ImageHashの参考サイト
 
